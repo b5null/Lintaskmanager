@@ -58,7 +58,7 @@ you have write access.
 
 ### 1. Check binary compatibility
 
-`releases/lintaskmanager` is a ready-built **Linux x86_64** executable, built on
+The `lintaskmanager` from releases is a ready-built **Linux x86_64** executable, built on
 Debian 13 with Qt 6.8.2. It uses system libraries rather than bundling them.
 Install the Qt 6 Widgets runtime and platform plugins supplied by your distribution.
 On Debian 13:
@@ -71,7 +71,7 @@ sudo apt install libqt6widgets6 qt6-qpa-plugins pkexec
 For other distributions, architectures, or older libraries, use the source-build
 instructions below to produce a binary for your machine.
 
-### 2. Run the installer
+### 2. Run the installer (releases)
 
 Open a terminal in the extracted folder and run:
 
@@ -80,7 +80,7 @@ sh ./install.sh
 ```
 
 The script installs the existing binary, launcher, and icon directly from
-`releases/`. It does not compile anything or require a `build/` directory.
+working directory. It does not compile anything or require a `build/` directory.
 All source paths are relative to the script, so it works from another directory
 or after renaming the downloaded folder. Sudo is used only to copy the files.
 
@@ -134,8 +134,8 @@ From the extracted folder, build and replace the release binary:
 ```sh
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release
 cmake --build build --parallel 2
-cp build/lintaskmanager releases/lintaskmanager
-sh releases/install.sh
+cp build/lintaskmanager installer/lintaskmanager
+sh .installer/install.sh
 ```
 
 To try it without installing, run `./build/lintaskmanager` instead.
