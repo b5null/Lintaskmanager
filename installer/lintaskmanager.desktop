@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Linux Task Manager
+Name[pt_BR]=Gerenciador de Tarefas Linux
+GenericName=System Monitor
+Comment=Monitor processes, resource usage, network activity and system services
+Comment[pt_BR]=Monitore processos, recursos, rede e serviços do sistema
+Exec=lintaskmanager
+TryExec=lintaskmanager
+Icon=lintaskmanager
+Terminal=false
+Categories=System;Monitor;
+Keywords=task;process;cpu;memory;network;services;systemctl;
+StartupNotify=true
+StartupWMClass=lintaskmanager
