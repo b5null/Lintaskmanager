@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/lintaskmanager.png" width="96" alt="Linux Task Manager icon">
+  <img src="installer/lintaskmanager.png" width="96" alt="Linux Task Manager icon">
 </p>
 
 # Linux Task Manager
