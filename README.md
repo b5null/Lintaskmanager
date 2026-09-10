@@ -76,7 +76,7 @@ instructions below to produce a binary for your machine.
 Open a terminal in the extracted folder and run:
 
 ```sh
-sh releases/install.sh
+sh ./install.sh
 ```
 
 The script installs the existing binary, launcher, and icon directly from
